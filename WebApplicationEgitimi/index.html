@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Anasayfa</title>
+</head>
+<body>
+    Anasayfa
+    <br />
+    HTML Elementleri
+    <h1>h1 En büyük sayfa başlık elementidir</h1>
+    <h2>h2 elementi sayfada alt başlık oluşturmak için kullanılır</h2>
+    <h3>h3 ise h2'nin alt başlığı olarak kullanılır</h3>
+    <h4>h4 elementi biraz daha küçük başlık için </h4>
+    <h5>h5 elementi en küçükten bir büyüğüdür </h5>
+    <h6>h6 elementi en son ve en küçük başlık elementidir</h6>
+
+
+    <p>
+        p elementi yazının paragraf olduğunu belirtmek için kullanabiliriz
+    </p>
+
+    <div>
+        div elementi sayfada bölümler oluşturmak için kullanılır
+    </div>
+
+    <hr />
+
+    <div>
+        hr elementi sayfada yazay çizgi çekilmesini sağlar.
+        <br />
+        br elementi ise satırdaki kendinden sonraki yazıyı alt satırdan devam ettirir.
+    </div>
+
+    <h3>
+        a elementi ile sayfada link-bağlantı oluşturma
+    </h3>
+
+    <a href="#">a elementi ile link oluşturmak için href in içine yazmalıyız</a>
+    <hr />
+    <a href="https://www.google.com/">Google'a git</a>
+    <hr />
+    <a href="https://www.google.com/" target="_blank">Google'ı yeni sekmede aç</a>
+    <h3>
+        Sayfada Resim gösterme
+    </h3>
+
+    <p>
+        Sayfada resim göstermek için img elementi kullanılır.
+        <br />
+        Src kısmındaki tırnakların arasına resim yolu ve adı uzantısıyla birlikte yazılır yazılır.
+    </p>
+
+    <img src="/Images/download.png" alt="Alternate Text" width="500" height="200" />
+    <img src="/Images/download.ico" alt="Alternate Text" height="500" />
+
+    <p>
+        resimlerde Genişlik için width yükseklik için height kodu ile boyutlandırma yapabiliriz.
+    </p>
+    <hr />
+    <p>
+        Table elementi ile ekranda excel tarzında veri gösterimi yapabiliriz.
+    </p>
+
+    <table>
+        <tr>
+            <td>
+                Bu yazı 1 satır(tr) ve 1 stun(td)'dan  oluşan table elementi içindedir.
+            </td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td>
+                table elementinde çerçeve kullanmak için border kodu kullanabiliriz.
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1">
+        <tr>
+            <td>Satırdaki sol kolon için</td>
+            <td>Satırdaki sağ kolon için</td>
+        </tr>
+        
+    </table>
+
+    <hr />
+
+    <h3>
+        Tablolarda satır ve sütun birleştirme
+    </h3>
+    <table border="1">
+        <caption>Caption ile tabloya başlık verebiliyoruz</caption>
+        <tr>
+            <th rowspan="3">Ürün Bilgileri:</th>
+        </tr>
+        <tr>
+            <th>Ürün Adı: </th>
+            <td>Asus Laptop</td>
+        </tr>
+        <tr>
+            <th rowspan="2">rowspan kodu ile kaç satırlık yükseklik lazımsa o kadar yükseklik veriyoruz</th>
+            <td>
+                <img src="Images/download.png" height="100" />
+            </td>
+        </tr>
+    </table>
+
+    <h3>
+        Colspan ile sütün(kolon) birleştirme 
+    </h3>
+        
+    <table border="1">
+        <tr>
+            <th>Ürün Adı:</th>
+            <td>Klavye</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Burası colspan=2 Koduyla 2 sütünluk yer kaplar satırda 
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <i>Html i elementi ile italik yani yana yatık yazılar yazdırabiliriz</i>
+    <em>em elementi ile'de yatık yazılar yazdırabiliriz</em>
+    <b>bold kalın yazı</b>
+    <strong>strong güçlü yazı</strong>
+
+    <h2>Html'de <small>small</small> elementi ile bir yazıyı daha küçük gösterebiliriz</h2>
+
+    <mark>mark HTML öğesi işaretli veya vurgulanmış metni tanımlar</mark>
+
+    <ins>Html ins tagı</ins>
+
+    <p>sub HTML öğesi ile <sub>alt</sub> çıkıntılı metin tanımlarız</p>
+    <p>sup HTMl öğesi ile <sup>üst yazı</sup> metnini tanımlar</p>
+
+    <h3>Html' de liste elemanları kullanımı</h3>
+    <p>Sıralı ve sırasız liste olmak üzere 2 farklı liste kullanabiliriz</p>
+
+    <ul>
+        <li>Unordere HTML List</li>
+        <li>Sırasız liste oluşturmak için</li>
+        <li>ul ve li kullanabiliriz</li>
+        <li>Özellikle menülerde sık kullanılır</li>
+    </ul>
+    
+    <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Ürünlerimiz</a></li>
+        <li><a href="#">İletişim</a></li>
+    </ul>
+
+    <h3>Sıralı liste</h3>
+
+    <ol>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Ürünlerimiz</a></li>
+        <li><a href="#">İletişim</a></li>
+    </ol>
+
+    <h4>Bir diğer liste yöntemi de dl yani Description Lists'dir. Açıklamalı listeler oluşturmada kullanılır</h4>
+    <dl>
+        <dt>Asus Laptop </dt>
+        <dt>Oyun  ve iş bilgisayarları </dt>
+        <dt>Dark Klavye</dt>
+        <dd>Rgb oyuncu klavyesi</dd>
+    </dl>
+
+    <h3>Fieldset elementi</h3>
+    <!--Html kodları arasına bu şekilde yorum satırı ekleyebiliyoruz-->
+    <fieldset>
+        <legend>Kullanıcı Girişi</legend>
+        <form action="/" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Kullanıcı Adı:
+                    </td>
+                    <td>
+                        <input id="Text1"type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Şifre:
+                    </td>
+                    <td>
+                        <input id="Password1" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="Submit1" type="submit" value="Giriş" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+
+    <h2>Semantik html5 elementleri</h2>
+
+    <header>
+        Web sayfalarındaki üst bölümü bu kodlar içerisinde yazmamız önerilir.
+        <nav>
+            nav elementi içerinde genelde sayfada kullanılacak menü kodları(ul li a )yer alır 
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
