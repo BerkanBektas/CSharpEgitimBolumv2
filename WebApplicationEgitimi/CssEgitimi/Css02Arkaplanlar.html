@@ -62,14 +62,37 @@
 
     <hr />
 
-    <div style="background-image:url('/Images/download.png'); background-repeat:no-repeat ;height:400px;">
+    <div style="background-image: url('/Images/download.png'); background-repeat: no-repeat; background-position: right top; height: 400px;">
         <h3>Css arka plan konumu</h3>
 
         <p>
-        Css ile html elemanlarına arkaplan resimleri ekleyenbiliriz
+            Css ile html elemanlarına arkaplan resimleri ekleyenbiliriz
         </p>
 
+        <p>
+            Bunun için yazmamız gereken kod şudur : backrground-image: url("arkaplan.gif");
+            <br />
+            Arkaplan resminin pozisyonunu ayarlamak için gerekli kod : background-position: right top; veya background-position:18px 58 px; pixellerle de ayarlayabiliriz.
+        </p>
+    </div>
+
+    <hr />
+
+    <div style="background-image: url('/Images/download.png'); background-attachment: fixed; background-repeat: no-repeat; background-position: bottom ; height: 500px;">
         
+        <h3>Css arka plan sabitleme</h3>
+
+        <p>
+            Arka plan Resminin kaydırılması mı yoksa sabit mi olması gerektiğini belirtir
+        </p>
+
+        <p>
+            Eğer sayfa aşşağı kaydırıldığında resmin sabit kalmasını istersek şu kodu eklemeliyiz : background-attachment: fixed;
+        </p>
+    </div>
+
+    <div style="background: #fff url('/Images/download.png') no-repeat fixed right bottom; height:500px;">
+        background: #fff url('/Images/download.png') no-repeat fixed center bottom kodu ile tek satırda tüm arkaplan işlemlerini halledebiliriz
     </div>
 
 </body>

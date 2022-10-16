@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css-03 Margin ve Padding</title>
+</head>
+<body>
+    <h1>Css Kenar Boşlukları (Margin-Padding)</h1>
+
+    <p>
+        Css özelliklerinden margin, tanımlanmış kenarlıkların dışında öğelerin etrafında boşluk oluşturmak için kullanılır.
+    </p>
+
+    <p>
+        Css ile kenar boşlukları üzerinde Margin ile bir öğenin dört yönden (üst, sağ, alt ve sol) için kenar boşluğu ayarlayabiliriz.
+    </p>
+
+    <p>
+        Css bir öğenin her bir tarafı için kenar boşluğunu belirtmek için özelliklere sahiptir <br />
+        margin-top(üst)<br />
+        margin-right(sağ)<br />
+        margin-bottom(alt)<br />
+        margin-left(sol)<br />
+    </p>
+
+    <p style="margin-top: 100px;margin-bottom:100px;margin-right:150px;margin-left:80px; width:300px;border:3px inset">
+        Margin kullanımı
+    </p>
+
+    <h2>Margin- Steno Özelliği</h2>
+    <p>Kodu kısaltmak için, tüm kenar boşluğu özelliklerini tek bir özellikte belirtmek mümkündür.</p>
+
+
+    <p style="margin: 25px 50px 75px 100px; border:1px dashed">
+        <b>Örnek</b>
+        <br />
+        Dört değere sahip bir kenar boşluğu özelliğini kullanalım:
+        <br />
+        <code>
+            p{margin: 25px(üstten 25) 50px(sağdan 50) 75(alttan 75) 100(soldan)}
+        </code>
+    </p>
+
+    <hr />
+
+    <h2>Padding</h2>
+    <p>
+        Css de Padding özelliği ile html elemanlarına çerçeveden içeri doğru boşluk verebiliriz.
+    </p>
+
+    <p style="padding: 25px 50px 75px 100px; border:1px dashed">
+
+        <b>Örnek</b>
+        <br />
+        Dört değere sahip bir kenar boşluğu özelliğini kullanalım:
+        <br />
+        <code>
+            p{pedding: 25px(üstten 25) 50px(sağdan 50) 75(alttan 75) 100(soldan)}
+        </code>
+    </p>
+
+    <hr />
+
+    <h2>Margin ve Padding Özelliğinin üç değeri varsa:</h2>
+
+    <p style="margin: 25px 50px 75px; padding: 25px 50px 75px; border:1px inset; background-color:antiquewhite; ">
+        margin(veya padding):25px 50px 75px; <br />
+        üst kenar boşluğu 25px <br />
+        sağ ve sol kenar boşlukları 50px vardır <br />
+        alt kenar boşluğu 75px olduğunu
+        <br />
+        Eğer margin ve padding'i 3'lü kullanırsak
+        <br />
+        1. değer üst boşluk
+        <br />
+        2. değer sağ ve sol boşluk
+        <br />
+        3. değer alt boşluktur.
+    </p>
+
+    <hr />
+
+    <h2>Margin ve Padding Özelliğinin 2 değeri varsa:</h2>
+
+    <p style="margin: 25px 50px;  padding: 25px 50px ; border: 5px outset; background-color: whitesmoke;">
+        üst ve alt kenar boşlukları 25px vardır
+        <br />
+        sağ ve sol kenar boşlukları 50px vardır
+        <br />
+        Yani margin ve paddinge e 2 değer verirsek o zaman <br />
+        1. değerimiz üst ve alt boşluğa <br />
+        2. değerimiz sağ ve sol boşluğa denk gelir
+    </p>
+
+    <hr />
+
+    <h2>Margin ve Padding Özelliğinin 1 değeri varsa:</h2>
+
+    <p style="margin:  50px;  padding: 50px ; border: 7px groove; background-color: azure;">
+        Eğer <code>p {margin:  50px;} p {padding: 50px;}</code> şeklinde kullanırsak 4 yönden de vermiş olduğumuz değer kadar boşluk bırakmış oluruz.
+    </p>
+
+    <hr />
+
+    <h2>Otomatik Değer(margin:auto)</h2>
+
+    <p>Kenar boşluğu özelliğini, kapsayıcı içindeki öğeyi yatak olarak ortalamak üzere ayarlayabilirsiniz</p>
+
+    <div style="width: 350px;margin: auto;padding:50px;border:1px solid red;">
+        Eğer bir elemanı ortalamak istersek margin auto özelliğinden yararlanabiliriz. <br />
+       <b>Önemli not:</b> Elemanları sayfada margin auto ile ortalayabilmek için width özelliğini kullanmalıyız, genişliği belirtmezsek margin sayfada ölçüleme yapamaz 
+    </div>
+
+    <div style="width: 350px; margin:18px auto;">
+        <img src="../Images/download.png" />
+    </div>
+
+
+
+
+
+</body>
+</html>
