@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CssEgitimi\Css01Giris.html" />
+    <Content Include="CssEgitimi\Css02Arkaplanlar.html" />
     <Content Include="Global.asax" />
+    <Content Include="HariciCss.css" />
     <Content Include="Images\download.ico" />
     <Content Include="Images\download.png" />
     <Content Include="index.html" />

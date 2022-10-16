@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css 02- Arkaplanlar</title>
+</head>
+<body>
+    <h2>Css 02- Arkaplanlar</h2>
+    <h3>Css arka plan özellikleri Html öğeler için arka plan efektrlerini tanımlamada kullanılır.</h3>
+
+    <p>
+        arka plan rengi <br />
+        arka plan resmi <br />
+        arka plan tekrarı <br />
+        arka plan eki <br />
+        arka plan konumu
+    </p>
+
+    <div style="background-color:green;opacity:0.5;">
+        Css de arkaplan rengine opacity ile saydamlık, şeffaflık ekleyebiliriz <br />
+        Grekli kod: background-color: green; opacity 0.5;
+    </div>
+
+    <hr />
+
+    <div style="background : rgba(0, 128, 0, 0.5)">
+        Opaklık için bir diğer yöntem de style da renk kodu olarak Rgba kullanmaktır
+        <br />
+        Örnek : style="background : rgba(0, 128, 0, 0.5)"
+        <br />
+        Sondaki değer alfa dır opaklığı bu değer ayarlar
+    </div>
+
+    <hr />
+
+    <div style="background-image:url('/Images/download.png');height:200px;">
+        <h3>Css arka plan resmi</h3>
+
+        <p>Css ile html elemanlarına arkaplan resimleri ekleyenbiliriz </p>
+
+        <p>
+            Bunun için yazmamız gereken kod şudur :background-image:url('/Images/download.png')
+        </p>
+    </div>
+
+    <hr />
+
+    <div style="background-image:url('/Images/download.png'); background-repeat:no-repeat ;height:400px;">
+        <h3>Css arka plan tekrarı</h3>
+
+        <p>Css ile html elemanlarına arkaplan resimleri ekleyenbiliriz </p>
+
+        <p>
+            background - repeat özelliği ile resim tekrarını yatayda, dikeyde tekrar edecek veya  hiç tekrar etmeyecek şekilde ayarlayabiliriz
+        </p>
+        <ol>
+            <li>background-repeat:repeat-y; : arkaplan resmini dikeyde tekrar et</li>
+            <li>background-repeat:repeat-x; : arkaplan resmini yatayda tekrar et</li>
+            <li>background-repeat:no-repeat-x; : arkaplan resmini tekrar etme!!</li>
+        </ol>
+    </div>
+
+    <hr />
+
+    <div style="background-image:url('/Images/download.png'); background-repeat:no-repeat ;height:400px;">
+        <h3>Css arka plan konumu</h3>
+
+        <p>
+        Css ile html elemanlarına arkaplan resimleri ekleyenbiliriz
+        </p>
+
+        
+    </div>
+
+</body>
+</html>
