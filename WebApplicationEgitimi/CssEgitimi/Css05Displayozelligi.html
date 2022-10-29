@@ -81,25 +81,201 @@
 
 
     <div style="display: flex">
-    Flex özelliği kullanmak için bir elemente display: flex; /* ya da inline-flex */ özelliği atamamız yeterlidir.
+        Flex özelliği kullanmak için bir elemente display: flex; /* ya da inline-flex */ özelliği atamamız yeterlidir.
     </div>
 
     <style>
+        #flexDiv {
+            display: flex;
+            min-height: 300px;
+            border: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
 
+            #flexDiv div {
+                padding: 1rem 3rem;
+                margin: 1rem;
+                border: 1px solid #ddd;
+                background-color: antiquewhite;
+            }
     </style>
 
     <div id="flexDiv" class="flexDiv">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
     </div>
+
+    <hr />
+    <h4> flex-wrap</h4>
+    <p>Varsayılan olarak esnek öğeler tek bir satıra sığmaya çalışırlar. Gerektiğinde birden fazla satıra yaymak için bu özelliği kullanabilirsiniz.</p>
+
+    <hr />
+
+    <h4>Flex-Direction</h4>
+    <p>
+        Öğelerin yönünü belirlemek için kullanılır.
+        Varsayılan olarak flex container yataya doğru uzar.
+        Dolayısı ile bu kapsayıcı içindeki tüm öğeler yan yana listelenir.
+    </p>
+
+
+
+    <p>
+        Kullanımı : flex-direction: row | row-rewerse | column | column-rewerse;
+    </p>
+
+    <hr />
+
+    <h4>aling-content</h4>
+
+    <p>
+        Çok satırlı yapılarda öğelerin dikey eksende hizasını ayarlamak için kullanılır.
+        <br />
+        Kullanımı için kapsayıcı öğeye align-content: stretch | flex-start | flex-end | center | space-between | space-evenly; özellikleri verilir.
+    </p>
+
+    <hr />
+
+    <ul>
+        <li>stretch (varsayılan) = Öğeleri hizalamaz, yüksekliklerini uzatır.</li>
+        <li>flex-start = Öğeleri dikey eksende başta hizalar.</li>
+        <li>flex-end = Öğeleri dikey eksende sona hizalar.</li>
+        <li>center = Öğeleri dikey eksende ortalı hizalar.</li>
+        <li>space-between = İlk satıdaki öğeler başta, son satırdaki öğeler sonra olmak üzere diğer satırdaki öğeleri dikey eksende ortalar.</li>
+        <li>space-evenly = Öğeleri satırlar arası eşit oranda olacak şekilde dikey eksende ortalar.</li>
+    </ul>
+
+    <hr />
+
+    <h4>justify-content</h4>
+
+    <p>
+        Öğelerin yatay eksende hizasını ayarlamak için kullanılır.
+        <br />Kullanımı : kapsayıcı dive şu özellikler atanır justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    </p>
+
+    <ul>
+        <li>flex-start (varsayılan) = Öğeleri başlangıç noktasında (sola dayalı) hizalar.</li>
+        <li>flex-end = Öğeleri bitiş noktasında (sağa dayalı) hizalar.</li>
+        <li>center = Öğeleri ortada hizalar.</li>
+        <li>space-between = İlk öğe sola dayalı, son öğe sağa dayalı ve diğerleri ortalı olacak şekilde hizalar.</li>
+        <li>space-around = İlk ve son öğe hariç diğerlerinin arası eşit olacak şekilde hizalar.</li>
+        <li>space-evenly = Tüm öğelerin arası aynı eşitlikte olacak şekilde hizalar.</li>
+    </ul>
+
+    <hr />
+
+
+    <h4>aling-items</h4>
+
+    <p>
+        Öğelerin dikey eksende hizasını ayarlamak için kullanılır.
+        <br />Kullanımı için kapsayıcı öğeye align-items: stretch | flex-start | flex-end | center | baseline; özellikleri verilir.
+    </p>
+
+
+    <ul>
+        <li>stretch (varsayılan) = Hizalama yapmaz, öğelerin yüksekliklerini kapsayıcıya göre uzatır.</li>
+        <li>flex-start = Öğeleri yukarıya doğru hizalar.</li>
+        <li>flex-end = Öğeleri aşağıya doğru hizalar.</li>
+        <li>center = Öğeleri ortaya doğru hizalar.</li>
+        <li>baseline = Öğelerin içindeki ilk satırı baz alarak ortalama yapar.</li>
+    </ul>
+
+    <hr />
+
+    <h3>Öğeler (items) için Flex özellikleri</h3>
+
+    <h4>order: Öğelerin sıralanışını değiştirmek için kullanılır.</h4>
+
+
+    <p>
+        Sıralama Kullanımı
+        <style>
+            .item5 {
+                order: 6;
+            }
+
+            .item6 {
+                order: 5;
+            }
+        </style>
+    </p>
+
+    <hr />
+
+    <h4>flex-grow</h4>
+
+    <p>
+        Bir öğeyi diğerlerine göre daha büyük göstermek için bu özelliği kullanıyoruz. Varsayılan değer 0'dır.
+    </p>
+
+
+    <div>
+        kullanımı
+        <style>
+            .item {
+                flex-grow: 1;
+            }
+
+            .item5 {
+                flex-grow: 2;
+            }
+
+            .item6 {
+                flex-grow: 4;
+            }
+        </style>
+    </div>
+
+    <hr />
+
+    <h4>flex-shrink</h4>
+
+    <p>
+        Bu aslında flex-grow özelliğinin tam aksine, küçültme işlemi için kullanılır. Varsayılan olarak değeri 1'dir.
+    </p>
+
+    <p>
+        Kullanımı
+        <style>
+            .flexDiv div:first-child {flex-shrink: 2;}
+
+            .flexDiv div:last-child {flex-shrink: 3;}
+        </style>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

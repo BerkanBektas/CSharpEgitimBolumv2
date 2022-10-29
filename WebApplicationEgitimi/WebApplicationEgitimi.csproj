@@ -72,6 +72,9 @@
     <Content Include="CssEgitimi\Css03MarginPadding.html" />
     <Content Include="CssEgitimi\Css04GenislikYukseklik.html" />
     <Content Include="CssEgitimi\Css05Displayozelligi.html" />
+    <Content Include="CssEgitimi\Css06PositionOzelliği.html" />
+    <Content Include="CssEgitimi\Css08FloatOzelligi.html" />
+    <Content Include="CssEgitimi\İcerikTasmasi.html" />
     <Content Include="Global.asax" />
     <Content Include="HariciCss.css" />
     <Content Include="Images\download.ico" />
