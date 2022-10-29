@@ -14,11 +14,11 @@
             Float left olan div sola yapışır ve sonraki elemanlar buradan itibaren dizilir.
         </div>
 
-        <div style="border: 1px solid" ">
+        <div style="border: 1px solid">
             Burası float left den sonraki div içeriği
         </div>
 
-        <div style="border: 1px solid" ">
+        <div style="border: 1px solid">
             Burası float left den sonraki div içeriği
         </div>
 
@@ -63,10 +63,28 @@
     </div>
 
     <style>
-        #urunKapsayici div{float:left;}
+        #urunKapsayici div {float: left;}
+        .kapsayici{clear:both; border:1px solid crimson; padding: 1rem;}
+        #resim{float:left;}
     </style>
 
-
+    <div class="kapsayici">
+        <div id="resim">
+            <img src="../Images/download.png" />
+        </div>
+        <div id="yazi">
+            Burası float right dan sonraki 2.div içeriği clear uygulayarak float özelliğini kaldırabiliriz
+            <p>
+                Clear özelliğinde önceki div de float ne ayarlandıysa ona göre bir temizleme yapabiliriz
+            </p>
+            <p>
+                Örneğin float right tan sonra bir temizleme yapacaksak clear:right diyerek float right özelliğinin uygulanmasını engelleyebiliriz.
+            </p>
+            <p>
+                Bir diğer temizlik yöntemimiz de clear:both dur. Bu özelliği verirsek float left veya right dan gelen kalıtımı iki taraflı engelleyebiliriz.
+            </p>
+        </div>
+    </div>
 
 
 

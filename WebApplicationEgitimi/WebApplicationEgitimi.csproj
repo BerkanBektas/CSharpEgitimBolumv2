@@ -78,8 +78,12 @@
     <Content Include="Global.asax" />
     <Content Include="HariciCss.css" />
     <Content Include="Images\download.ico" />
+    <Content Include="Images\download.jpg" />
     <Content Include="Images\download.png" />
+    <Content Include="Images\s.jpg" />
     <Content Include="index.html" />
+    <Content Include="MiniSite\stil.css" />
+    <Content Include="MiniSite\İndex.html" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>

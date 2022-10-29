@@ -1,0 +1,31 @@
+﻿body {
+}
+#container{max-width:1000px; margin: auto;}
+
+
+#anaBanner img {width: 100%;}
+
+a{color:black; text-decoration:none;}
+
+a:hover{color:red; border-bottom:1px solid red;}
+
+header {display: flex;justify-content: space-between; align-items:center;}
+
+#menu li { display:inline; margin-right:1rem; }
+
+#menu li:last-child {margin-right:0;}
+
+#urunler div {float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
