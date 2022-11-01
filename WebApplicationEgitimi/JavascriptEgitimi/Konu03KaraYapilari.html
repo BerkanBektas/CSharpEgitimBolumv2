@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Js Karar Yapıları</title>
+</head>
+<body>
+    <h1>Js Karar Yapıları</h1>
+    <p>
+        Javascript de de diğer programlama dillerindeki gibi if, else if, else ile karar yapısı kullanabilmekteyiz.
+    </p>
+
+    <script>
+        let sayi = -10;
+        if (sayi > 0) {
+            console.log('Sayı' + sayi + 'sıfırdan büyüktür')
+        } else if (sayi == 0) {
+            console.log('Sayı' + sayi + 'sıfırdır')
+        }
+        else {
+            console.log('Sayı' + sayi + 'sıfırdan küçüktür')
+        }
+
+        // Elimizde kontrol edeceğimiz sadece 2 seçenek varsa kısa if yapısını kullanabiliriz
+        sayi > 0 ? console.log('Sayı' + sayi + 'sıfırdan büyüktür') : console.log('sayı' + sayi + 'sıfırdan küçük')
+    </script>
+
+</body>
+</html>

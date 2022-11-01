@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Js Fonksiyonlar</title>
+</head>
+<body>
+    <h1>Js Fonksiyonlar</h1>
+    
+    <script>
+        // Fonskiyon tanımlama
+        function FonksiyonAdi(parametre) {
+            console.log('Fonksiyona gönderilen değer :', parametre);
+        }
+        //Fonksiyon Çağırma
+        FonksiyonAdi("Javascript ile fonksiyon çağırımı")
+
+        //Örnek 2
+        function ToplamaYap(say1, say2) {
+            console.log('Sayıların toplamı:', say1 + say2);
+        }
+        ToplamaYap(10,8)
+
+        //Örnek 3  -- geriye değer döndüren metot 
+        function cikarmaYap(sayi1, sayi2) {
+            return sayi1 - sayi2;
+        }
+        console.log("36-18 =", cikarmaYap(36, 18));
+
+        function RenkDegistir(arkaplanRengi, yaziRengi) {
+            document.bgColor = arkaplanRengi //document.bgColor js kodu document sayfa oluyor, bgColor ise sayfanın arkaplan rengini değiştiren js de var olan property 
+            document.fgColor = yaziRengi //fgColor ise sayfadaki yazı rengini değiştiren js özelliği
+        }
+        RenkDegistir("red","white")
+
+        var icgenislik = window.innerWidth; // window nesnesi de js de hazır gelen bir diğer nesnedir ve içerisinde sayfanın çalıştığı pencereyle alakalı yapabileceğimiz hazır işlemleri barındırır.
+        var icyukseklik = window.innerHeight; // innerHeight özelliği bize tarayıcı pencere yüksekliğini verir
+        // Dış Ölçüler
+        var disgenislik = window.outerWidth;
+        var disyukseklik = window.outerHeight;
+
+        document.write("<h3>Pencere iç genişliği :" + icgenislik + "</h3>");
+        document.write("<h3>Pencere iç yüksekliği :" + icyukseklik + "</h3>");//ekrana bir şey yazdırırken html elementleri de kullanabiliriz
+
+        document.write("<h3>Pencere dış genişliği :" + disgenislik + "</h3>");
+        document.write("<h3>Pencere dış yüksekliği :" + disyukseklik + "</h3>");
+
+        if (icgenislik < 768) {
+            RenkDegistir("blue","white")
+        }
+
+    </script>
+
+</body>
+</html>

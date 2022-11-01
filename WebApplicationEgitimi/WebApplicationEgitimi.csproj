@@ -82,6 +82,13 @@
     <Content Include="Images\download.png" />
     <Content Include="Images\s.jpg" />
     <Content Include="index.html" />
+    <Content Include="JavascriptEgitimi\Konu01JavaScriptGiris.html" />
+    <Content Include="JavascriptEgitimi\Konu02JsMatematikselİslemler.html" />
+    <Content Include="JavascriptEgitimi\Konu03KaraYapilari.html" />
+    <Content Include="JavascriptEgitimi\Konu04Operatorler.html" />
+    <Content Include="JavascriptEgitimi\Konu05Donguler.html" />
+    <Content Include="JavascriptEgitimi\Konu06Switchcase.html" />
+    <Content Include="JavascriptEgitimi\Konu07Fonksiyonlar.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="MiniSite\İndex.html" />
     <Content Include="Web.config" />
