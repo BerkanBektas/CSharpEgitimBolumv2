@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Konu 08 Olaylar</title>
+</head>
+<body>
+
+    <h1>Javascript Olaylar(Events)</h1>
+
+    <h2>OnClick Olayı</h2>
+
+    <script>
+        function SayfaRenginiDegistir(bgRenk, fgRenk) {
+            document.bgColor = bgRenk
+            document.fgColor = fgRenk
+        }
+
+    </script>
+
+    <div>
+        <input id="Button1" type="button" value="Kırmızı Beyaz" onclick="SayfaRenginiDegistir('Red','White')" />
+        <input id="Button2" type="button" value="Mavi Sarı" onclick="SayfaRenginiDegistir('DarkBlue','Yellow')" />
+        <input id="Button3" type="button" value="Beyaz Mavi" onclick="SayfaRenginiDegistir('White','Blue')" />
+        <input id="Button4" type="button" value="Beyaz Kırmızı" onclick="SayfaRenginiDegistir('White','Crimson')" />
+        <input id="Button5" type="button" value="Siyah Beyaz" onclick="SayfaRenginiDegistir('Black','White')" />
+    </div>
+
+    <hr />
+
+    <h3>Onclick Örnek 2 - Cinsiyet Seçme</h3>
+
+    <form name="cinsiyet">
+        <input name="cins" type="radio" value="k" /> Kadın
+        <input name="cins" type="radio" value="e" /> Erkek
+        <input id="Button1" type="button" value="Seç" onclick="goster()" />
+    </form>
+
+    <script>
+        function goster() {
+            var secilenCinsiyet = "";
+            if (document.cinsiyet.cins[0].checked) {
+                secilenCinsiyet = "Kadın"
+            }
+            if (document.cinsiyet.cins[1].checked) {
+                secilenCinsiyet = "Erkek"
+            }
+            alert("Seçtiğiniz Cinsiyet :" + secilenCinsiyet)
+        }
+    </script>
+
+    <hr />
+
+    <h3>Örnek 3 - onClick Confrim Olayı</h3>
+
+    <p>
+        Onclick olayında kullanıcıya onay-iptal verme ekranı açmak için kullanılır
+    </p>
+
+    <script>
+        function kontrol() {
+            mesaj = "Farklı bir sayfaya geçilecek onaylıyor musunuz?"
+            if (confirm(mesaj)) {//confirm metodu kullanıcıya tamam veya iptal seçeneği sunar
+                location.href = "https://www.google.com.tr/"; //location.href = kendisine verilen adrese yönlendirme yapar
+
+            }
+        }
+
+        function UrunSilmeOnay(id) {
+            if (confirm(id +" Numaralı Ürün Silinecektir!")) {
+                // Burada ilgili silme metodu çalıştırılır
+                alert(id + "Id'li ürün silinmiştir!")
+            }
+        }
+    </script>
+
+    <input id="Button1" type="button" value="Google'ı aç" onclick="kontrol()" />
+    <input id="Button2" type="button" value="Ürünü Sil" onclick="UrunSilmeOnay(18)" />
+
+    <hr />
+
+    <h3>Örnek 4 - onMouseOver Olayı </h3>
+
+    <p>
+        Ekrandaki herhangi bir elementin üzerine geldiğinizde gerçekleşen olaydır.
+    </p>
+
+    <a href="#" onmouseover="alert('onMouseOver olayı gerçekleşti')" >onMouseOver</a>
+    <hr />
+
+    <h3>onFocus Olayı</h3>
+
+    <p>
+        onFocus Olayı ekrandaki bir elementin içine tıklanınca gerçekleşir.
+    </p>
+
+    <input id="Text1" type="text" name="fokus" value="Buraya Tıkla" onfocus="this.value='Focus işlemi Gerçekleşti!'"/>
+
+    <hr />
+</body>
+</html>
