@@ -90,6 +90,10 @@
     <Content Include="JavascriptEgitimi\Konu06Switchcase.html" />
     <Content Include="JavascriptEgitimi\Konu07Fonksiyonlar.html" />
     <Content Include="JavascriptEgitimi\Konu08Olaylar.html" />
+    <Content Include="JavascriptEgitimi\Konu09Diziler.html" />
+    <Content Include="JavascriptEgitimi\Konu10Nesneler.html" />
+    <Content Include="JavascriptEgitimi\Konu11StringMetotlari.html" />
+    <Content Include="JavascriptEgitimi\Konu12Seciciler.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="MiniSite\İndex.html" />
     <Content Include="Web.config" />

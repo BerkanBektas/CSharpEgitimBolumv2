@@ -67,7 +67,7 @@
         }
 
         function UrunSilmeOnay(id) {
-            if (confirm(id +" Numaralı Ürün Silinecektir!")) {
+            if (confirm(id + " Numaralı Ürün Silinecektir!")) {
                 // Burada ilgili silme metodu çalıştırılır
                 alert(id + "Id'li ürün silinmiştir!")
             }
@@ -85,7 +85,7 @@
         Ekrandaki herhangi bir elementin üzerine geldiğinizde gerçekleşen olaydır.
     </p>
 
-    <a href="#" onmouseover="alert('onMouseOver olayı gerçekleşti')" >onMouseOver</a>
+    <a href="#" onmouseover="alert('onMouseOver olayı gerçekleşti')">onMouseOver</a>
     <hr />
 
     <h3>onFocus Olayı</h3>
@@ -94,9 +94,84 @@
         onFocus Olayı ekrandaki bir elementin içine tıklanınca gerçekleşir.
     </p>
 
-    <input id="Text1" type="text" name="fokus" value="Buraya Tıkla" onfocus="this.value='Focus işlemi Gerçekleşti!'"/>
+    <input id="Text1" type="text" name="fokus" value="Buraya Tıkla" onfocus="this.value='Focus işlemi Gerçekleşti!'" />
 
     <hr />
-    21 ekim js olaylar 
+
+    <h3>onBlur Olayı</h3>
+
+    <p>
+        onBlur olayı ekrandaki bir elementin içinden ayrılınca gerçekleşir
+    </p>
+    <input id="Text1" type="text" name="fokus" value="Buraya Tıkla" onfocus="this.value='Focus işlemi Gerçekleşti!'" onblur="this.value='Güle güle sevgi kelebeği'" />
+    <hr />
+
+    <h3>onChange Olayı</h3>
+
+    <p>
+        Bir elementte değşim gerçekleştiğinde tetiklenir. Mesela bir select list'den bir seçenek seçtiğimizde
+    </p>
+
+    <form>
+        <select id="Select1" name="list" onchange="location=sec(this)">
+            <option value="#">Bir Arama Motoru Seçiniz</option>
+            <option value="https://www.google.com.tr/">Google</option>
+            <option value="https://www.yahoo.com/">Yahoo</option>
+            <option value="https://www.yandex.com.tr/">Yandex</option>
+        </select>
+    </form>
+
+    <script>
+        function sec(select) {
+            return select.options[select.selectedIndex].value//buraya gelen option içindeki value yani değeri döndürdük
+        }
+    </script>
+
+    <hr />
+
+    <h3>onSubmit Olayı</h3>
+
+    <p>
+        OnSubmit olayı bir form sunucuya gönderilmek üzere tetiklendiğinde çalışır.
+    </p>
+
+    <form name="form1" onsubmit="veriKontrol()">
+        <b>Tc No : </b>
+        <input type="text" name="tcnumarasi" />
+        <input id="Submit1" type="submit" value="Kaydet" />
+    </form>
+
+    <script>
+        function veriKontrol() {
+            var karakterSayisi = document.form1.tcnumarasi.value.length;
+            if (karakterSayisi == 11) {
+                alert('Kayıt Başarılı!');
+                //Location="siteadresi"
+            }
+            else {
+                alert("Kayıt Başarısız!" + karakterSayisi + "Karakter Girdiniz. Tc No 11 Karakter Olmalıdır!!");
+                event.preventDefault();// preventedDefault metodu formun varsayılan işlemi olan submit olmasını engeller
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Js Diziler(Arrays)</title>
+</head>
+<body>
+    <h1>Js Diziler(Arrays)</h1>
+
+    <script>
+        var sayilar = [1, 3, 5, 7, 9];
+        var toplam = 0;
+        for (const sayi in sayilar) {// Js de foreach döngüsü yok bunun yerine for in var
+            //toplam += key;
+            console.log('sayı', sayi)
+            toplam += sayilar[sayi];
+        }
+        console.log('sayilar',sayilar)
+        console.log('Toplam :', toplam)
+
+        const arabalar = ["Saab", "Volvo", "BMW", "AUDI"]
+        let secilenAraba = arabalar[3];
+        console.log("secilen Araba : ", secilenAraba);
+
+        arabalar[3] = "Fiat";
+        console.log("secilen Araba : ", arabalar[3]);
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
