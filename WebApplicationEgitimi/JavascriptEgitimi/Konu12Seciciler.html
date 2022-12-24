@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Js Seçiciler</title>
     <style>
-        body{color:darkgray}
+        body{color:black}
         .clasSecici {color:crimson}
         #idSecici{color:red;border:5px inset crimson;padding:1rem;}
         #idSecici span{border-bottom:3px solid}
@@ -20,6 +20,66 @@
             Bunun için document yani sayfa üzerindeki istediğimiz elementi seçmemiz yeterlidir.
         </span>
     </p>
+
+    <p class="clasSecici">
+        Javascript de sayfadaki elementlerin herhangi bir özelliği ile elementi seçebiliriz.
+        Id,name,Class veya alt- üst ilişkili olduğu bir element üzerinden.
+    </p>
+
+    <h2 class="clasSecici"> Html Elementlerini Id ye Göre seçme</h2>
+
+    <p id="mrbdny">
+        Merhaba
+    </p>
+    
+    <p id="jsIdSeciciTest" class="brd"></p>
+
+
+    <script>
+        const icerik = document.getElementById("mrbdny");// İd sine göre element seçme metodu
+        document.getElementById("jsIdSeciciTest").innerText = "mrbdny id li element içeriği :" + icerik.innerText;
+    </script>
+
+    <hr />
+
+    <h2>Html  elementlerini etiket adına(tag name)ye göre seçme</h2>
+
+    <div>Div içeriği</div>
+
+    <div id="bosDiv" class="brd"></div>
+
+    <script>
+        var divler = document.getElementsByTagName("div"); // sayfaki tüm div elementlerini seç
+        var pler = document.getElementsByTagName("p");// elementler dizi formatında seçilir.
+
+        document.getElementById("bosDiv").innerText = "seçtiğimiz div elemtinden gelen içerik : " + pler[3].innerText;//getElementsByTagName metodu sayfadaki kendisine verilen html element koduna sahip tüm elementleri seçer. Elementler dizi formantında gelir ve bu diziden verdiğimiz indexteki değere sahip elemente divler[0] koduyla ulaşabiliriz.
+
+    </script>
+
+    <hr />
+
+    <h2 class="sinifSecici">
+        Html Elementlerini Sınıf adına (Class name)e Göre seçme
+    </h2>
+
+    <p>
+        Sayfadaki elementleri sahip olduğu class adına göre seçmemizi sağlar.
+    </p>
+
+    <div id="sinifSeciciId" class="brd"></div>
+
+    <script>
+        var sinifsecici = document.getElementsByClassName("sinifSecici");//class değeri sinifSecici olan elementleri seç(class kullanan birden çok element olabileceği için dizi formatında liste gelir)
+        document.getElementById("sinifSeciciId").innerText = sinifsecici[0].innerText;
+    </script>
+
+    27 ekim dakika 43
+
+
+
+
+
+
 
 
 
